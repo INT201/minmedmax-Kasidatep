@@ -2,17 +2,17 @@ const { template } = require('@babel/core')
 
 function minMedMax(n1, n2, n3) {
   let sortNumberArray = [n1, n2, n3]
-  let compareNumber
-  function sortNumberInArray(a, b) {
+  let numberOfCompare
+  function compareNumber(a, b) {
     if (sortNumberArray[a] > sortNumberArray[b]) {
-      compareNumber = sortNumberArray[a]
+      numberOfCompare = sortNumberArray[a]
       sortNumberArray[a] = sortNumberArray[b]
-      sortNumberArray[b] = compareNumber
+      sortNumberArray[b] = numberOfCompare
     }
   }
-  sortNumberInArray(0,2)
-  sortNumberInArray(0,1)
-  sortNumberInArray(1,2)
+  compareNumber(0,2)
+  compareNumber(0,1)
+  compareNumber(1,2)
   return {min:sortNumberArray[0], mid:sortNumberArray[1], max:sortNumberArray[2]}
 }
 module.exports = minMedMax
