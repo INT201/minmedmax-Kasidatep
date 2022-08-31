@@ -14,6 +14,6 @@ function minMedMax(n1, n2, n3) {
   sortNumberInArray(0,2)
   sortNumberInArray(0,1)
   sortNumberInArray(1,2)
-  return {min: sortNumberArray[0], mid: sortNumberArray[1], max: sortNumberArray[2]}
+  return {min:sortNumberArray[0], mid:sortNumberArray[1], max:sortNumberArray[2]}
 }
 module.exports = minMedMax
