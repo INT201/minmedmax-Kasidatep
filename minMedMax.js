@@ -1,5 +1,4 @@
 const { template } = require('@babel/core')
-const { basename } = require('discord.js')
 
 function minMedMax(n1, n2, n3) {
   let sortNumberArray = [n1, n2, n3]
